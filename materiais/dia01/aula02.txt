@@ -1,0 +1,29 @@
+Como funciona o Java
+
+    - Compilador "traduz" código fonte para código executável(código de máquina)
+    - Linguagem C é multiplataforma mas depende de uma pré compilação
+
+Java:
+    - O código-fonte Java é enviado ao compilador javac
+    - O javac gera bytecode, não um executável do sistema
+    - O bytecode é independente de plataforma
+    - A JVM executa o bytecode
+    - A JVM "traduz" o bytecode para código da máquina em tempo de execução
+    - Isso permite que o mesmo programa Java rode em qualquer sistema com JVM
+
+Codigo.java → javac → MeuCodigo.class (bytecode) → java/JVM → execução
+
+Sendo assim o código pode ser executado em qualquer plataforma (WORA - Write once, run 
+anywhere)
+
+JRE - Ambiente de Execução Java:
+    - JVM
+    - Loader / Verificador
+    - Interpretador / Gerenciador
+    - Compilador JIT (Just-in-time, traduz o bytecode Java para código de máquina durante a execução do programa, otimizando o desempenho e reduzindo tempo)
+
+JDK - Kit de Desenvolvimento Java:
+    - JRE
+    - Linguagem Java (JavaLang)
+    - JavaTools (dentro possui ferramentas como: JavaC, Debugger e APIs)
+    - IDE/Ambiente de Desenvolvimento (opcional)
