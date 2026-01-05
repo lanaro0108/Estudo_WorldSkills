@@ -4,58 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WorldSkills – Mobile Application Development</title>
-
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    h1, h2, h3 {
-      color: #0d9488;
-    }
-
-    code, pre {
-      background-color: #eee;
-      padding: 8px;
-      display: block;
-      border-radius: 6px;
-      overflow-x: auto;
-    }
-
-    ul {
-      margin-left: 20px;
-    }
-
-    hr {
-      margin: 40px 0;
-    }
-  </style>
 </head>
-
 <body>
-
   <h1>🏆 WorldSkills – Mobile Application Development</h1>
-
   <p>
     Este repositório reúne <strong>todo o repertório de estudos</strong> para a modalidade
     <strong>Mobile Application Development (WorldSkills)</strong>, com foco inicial em
     <strong>Dart</strong> e progressão para <strong>Flutter</strong>, seguindo uma preparação
     de longo prazo (até 2028).
   </p>
-
   <p>
     O objetivo não é apenas aprender a programar, mas <strong>treinar como competidor</strong>:
     lógica sólida, código limpo, velocidade, organização e resolução de problemas sob pressão.
   </p>
-
   <hr />
-
   <h2>🎯 Objetivo Geral</h2>
-
   <ul>
     <li>Construir base forte em lógica de programação</li>
     <li>Dominar Dart antes de Flutter</li>
