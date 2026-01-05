@@ -1,27 +1,73 @@
-🏆 WorldSkills – Mobile Application Development
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WorldSkills – Mobile Application Development</title>
 
-Este repositório reúne todo o repertório de estudos para a modalidade Mobile Application Development (WorldSkills), com foco inicial em Dart e progressão para Flutter, seguindo uma preparação de longo prazo (até 2028).
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      margin: 40px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
 
-O objetivo não é apenas aprender a programar, mas treinar como competidor: lógica sólida, código limpo, velocidade, organização e resolução de problemas sob pressão.
+    h1, h2, h3 {
+      color: #0d9488;
+    }
 
-🎯 Objetivo Geral
+    code, pre {
+      background-color: #eee;
+      padding: 8px;
+      display: block;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
 
-Construir base forte em lógica de programação
+    ul {
+      margin-left: 20px;
+    }
 
-Dominar Dart antes de Flutter
+    hr {
+      margin: 40px 0;
+    }
+  </style>
+</head>
 
-Evoluir para Flutter profissional
+<body>
 
-Atender aos critérios da WorldSkills:
+  <h1>🏆 WorldSkills – Mobile Application Development</h1>
 
-Funcionalidade
+  <p>
+    Este repositório reúne <strong>todo o repertório de estudos</strong> para a modalidade
+    <strong>Mobile Application Development (WorldSkills)</strong>, com foco inicial em
+    <strong>Dart</strong> e progressão para <strong>Flutter</strong>, seguindo uma preparação
+    de longo prazo (até 2028).
+  </p>
 
-Qualidade de código
+  <p>
+    O objetivo não é apenas aprender a programar, mas <strong>treinar como competidor</strong>:
+    lógica sólida, código limpo, velocidade, organização e resolução de problemas sob pressão.
+  </p>
 
-Organização
+  <hr />
 
-Performance
+  <h2>🎯 Objetivo Geral</h2>
 
-UX/UI
-
-Gestão de tempo
+  <ul>
+    <li>Construir base forte em lógica de programação</li>
+    <li>Dominar Dart antes de Flutter</li>
+    <li>Evoluir para Flutter profissional</li>
+    <li>Atender aos critérios da WorldSkills:</li>
+    <ul>
+      <li>Funcionalidade</li>
+      <li>Qualidade de código</li>
+      <li>Organização</li>
+      <li>Performance</li>
+      <li>UX/UI</li>
+      <li>Gestão de tempo</li>
+    </ul>
+  </ul>
+</html>
