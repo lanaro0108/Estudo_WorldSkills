@@ -1,0 +1,35 @@
+// Widgets Invisíveis
+
+import 'package:flutter/material.dart';
+
+class WidgetsInvisiveis extends StatelessWidget {
+  const WidgetsInvisiveis({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Widgets Invisíveis')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+
+            // Invisível, mas ocupa espaço
+            SizedBox(height: 30),
+
+            Opacity(
+              opacity: 0.0,
+              child: Text('Invisível, mas ocupa espaço'),
+            ),
+
+            // Invisível e não ocupa espaço
+            Visibility(
+              visible: false,
+              child: Text('Totalmente invisível'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
