@@ -7,16 +7,17 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Olá Mundo'),
+          title: const Text('Olá Mundo'),
         ),
-        body: Text('Olá Flutter'),
+        body: const Text('Olá Flutter'),
       ),
-    )
+    ); // ; adicionado aqui
   }
 }
