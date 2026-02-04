@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Olá Mundo'),
         ),
+        body: Text('Olá Flutter'),
       ),
     )
   }
