@@ -1,0 +1,28 @@
+// Widgets Visíveis
+
+import 'package:flutter/material.dart';
+
+class WidgetsVisiveis extends StatelessWidget {
+  const WidgetsVisiveis({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Widgets Visíveis')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: const [
+            Text('Texto visível'),
+            Icon(Icons.star, size: 40),
+            SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: null,
+              child: Text('Botão visível'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
