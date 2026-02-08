@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
             ElevatedButton(
               child: Text('Resposta 2'),
               onPressed: () {
-                print('Resposta 2 foi selecionada')
+                print('Resposta 2 foi selecionada');
               },
             ),
             ElevatedButton(
