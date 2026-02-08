@@ -66,7 +66,7 @@ class _PerguntaAppState extends State<PerguntaApp> { // Método privado
 
 class PerguntaApp extends StatefulWidget {
   @override
-  State<PerguntaApp> createState() {
-    return PerguntaAppState();
+  State<_PerguntaApp> createState() {
+    return _PerguntaAppState();
   }
 }
