@@ -9,7 +9,7 @@ void main() {
 class _PerguntaAppState extends State<PerguntaApp> { // Método privado
   var perguntaSelecionada = 0;
 
-  void responder() {
+  void _responder() {
     setState(() {
       if (perguntaSelecionada < 1) {
         perguntaSelecionada++;
