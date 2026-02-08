@@ -3,48 +3,70 @@ import 'package:flutter/material.dart';
 // Criação de Árvore de Widgets
 
 void main() {
-  runApp(const MyApp());
+  runApp(PerguntaApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class PerguntaAppState extends State<PerguntaApp> {
+  var perguntaSelecionada = 0;
 
   void responder() {
-    print('Pergunta respondida');
+    setState(() {
+      if (perguntaSelecionada < 1) {
+        perguntaSelecionada++;
+      }
+    });
+    print(perguntaSelecionada);
   }
-   
+
   @override
   Widget build(BuildContext context) {
-    final List<String> perguntas = [
-      'Qual sua cor favorita?',
-      'Qual seu animal favorito?',
+    final perguntas = [
+      'Qual a sua cor favorita?',
+      'Qual o seu animal favorito?',
     ];
 
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Olá Mundo'),
+          title: const Text('Perguntas'),
         ),
-        body: Column(
-          children: <Widget>[
-            Text(perguntas[0]),
-            ElevatedButton(
-              child: Text('Resposta 1'),
-              onPressed: responder,
+        body: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/wallpaper.jpg'),
+              fit: BoxFit.cover,
             ),
-            ElevatedButton(
-              child: Text('Resposta 2'),
-              onPressed: () {
-                print('Resposta 2 foi selecionada');
-              },
-            ),
-            ElevatedButton(
-              child: Text('Resposta 3'),
-              onPressed: () => print('Resposta 3!!!'),
-            ),
-          ],
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                perguntas[perguntaSelecionada],
+                style: const TextStyle(fontSize: 24, color: Colors.white),
+              ),
+              ElevatedButton(
+                onPressed: responder,
+                child: const Text('Resposta 1'),
+              ),
+              ElevatedButton(
+                onPressed: responder,
+                child: const Text('Resposta 2'),
+              ),
+              ElevatedButton(
+                onPressed: responder,
+                child: const Text('Resposta 3'),
+              ),
+            ],
+          ),
         ),
       ),
     );
+  }
+}
+
+class PerguntaApp extends StatefulWidget {
+  @override
+  State<PerguntaApp> createState() {
+    return PerguntaAppState();
   }
 }
