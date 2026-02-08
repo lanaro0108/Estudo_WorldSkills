@@ -36,3 +36,4 @@ Esse estado normalmente é controlado por um `StatefulWidget` usando `setState()
 - **Estado**: dados que podem mudar
 - **Estado da aplicação**: impacta várias telas
 - **Estado do widget**: impacta apenas um componente da interface
+- **Focar em componentes sem estado**
