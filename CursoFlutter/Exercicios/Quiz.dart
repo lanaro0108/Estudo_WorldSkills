@@ -6,7 +6,7 @@ void main() {
   runApp(PerguntaApp());
 }
 
-class PerguntaAppState extends State<PerguntaApp> {
+class _PerguntaAppState extends State<PerguntaApp> { // Método privado
   var perguntaSelecionada = 0;
 
   void responder() {
@@ -45,15 +45,15 @@ class PerguntaAppState extends State<PerguntaApp> {
                 style: const TextStyle(fontSize: 24, color: Colors.white),
               ),
               ElevatedButton(
-                onPressed: responder,
+                onPressed: _responder,
                 child: const Text('Resposta 1'),
               ),
               ElevatedButton(
-                onPressed: responder,
+                onPressed: _responder,
                 child: const Text('Resposta 2'),
               ),
               ElevatedButton(
-                onPressed: responder,
+                onPressed: _responder,
                 child: const Text('Resposta 3'),
               ),
             ],
